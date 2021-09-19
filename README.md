@@ -1,5 +1,7 @@
 # HEX PROJECT
 
+## This is not Final Version of project
+
 **HEX PROJECT** is a programming project designed by Mr. David RENAULT, conducted by all first year informatics engineering students of ENSEIRB-MATMECA in the 2019/2020 scholar year.
 
 Briefly, students are divided to 4 students' groups. The goal is to have us work together and think outside the box and write a highly robust code using all of the knowledge and assets we learned through out this semester. 
@@ -40,4 +42,4 @@ In order to clean the deposit:
 ## 4    	License
 	ENSEIRB-MATMECA  
 
-# This is not Final Version of project
+# Reminder: This is not Final Version of project
