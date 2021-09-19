@@ -1,0 +1,49 @@
+#include <stdlib.h>
+
+
+cc -> set (ancien projet)
+
+parours_largeur(cc1, cc_end, graph_t, couleur, file)
+
+liste_cc = {cc1, cc2, ...};   // tableau de sets
+pere = {0, 0, ..., 0};        // tableau d'entier
+T = {0, 0, ..., 0};           // tableau d'entier
+
+N = {};                       // file
+for each x in cc1{
+  emfiler(x, N);
+  T[x] = 1;
+  pere[x] = x;
+  }
+
+flag = 0;
+while non_vide(N) et !flag{
+  x = defiler(N);
+  V = voisins(x, graph_t, couleur);            // fonction à implémenter -> renvoie une file
+  for each vEV{
+      pere[v] = u;
+      if in(v, cc_end)                        // fonction in à implémenter (déjà implémenter : find)
+	     flag = 1;
+	     break;
+      if in(v, liste_cc)
+	     ajouter tous les sommets w du cc concerné à N;
+	     T[chaque w] = 1;
+	     pere[chaque w] = u;
+      else if T[v] == 0{
+	  T[v] = 1;
+	  enfiler(N, v);
+	}
+    }
+
+  return remonter(pere, v, file);                    // Renvoie le nombre d'élément dans file* et la remplie 
+}
+
+// La fonction parcours en largeur remplie la file et retourne son nombre d'élément.
+
+
+
+
+// -> trouver cc1 et cc_end et les creer, déjà fait !
+// -> faire le parcours en largeur et récupérer le chemin le plus court entre cc1 et cc_end
+// -> prendre le vertex à mi-chemin
+// -> jouer ce coup
